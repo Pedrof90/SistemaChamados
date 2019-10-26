@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{50DB8F45-1EF0-428B-915A-90BF845AA029}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Sistema_De_Chamados</RootNamespace>
+    <AssemblyName>Sistema_De_Chamados</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Apresentação\BemVindo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Apresentação\BemVindo.Designer.cs">
+      <DependentUpon>BemVindo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Apresentação\Cadastro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Apresentação\Cadastro.Designer.cs">
+      <DependentUpon>Cadastro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Apresentação\ConsultarChamado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Apresentação\ConsultarChamado.Designer.cs">
+      <DependentUpon>ConsultarChamado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Apresentação\GerenciarChamado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Apresentação\GerenciarChamado.Designer.cs">
+      <DependentUpon>GerenciarChamado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Apresentação\TelaAdm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Apresentação\TelaAdm.Designer.cs">
+      <DependentUpon>TelaAdm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\ChamadoDaoComandos.cs" />
+    <Compile Include="DAL\Conexao.cs" />
+    <Compile Include="DAL\LoginDaoComandos.cs" />
+    <Compile Include="Apresentação\GerarRelatorio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Apresentação\GerarRelatorio.Designer.cs">
+      <DependentUpon>GerarRelatorio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\PessoaDaoComandos.cs" />
+    <Compile Include="Modelo\ChamadoMODEL.cs" />
+    <Compile Include="Modelo\Controle.cs" />
+    <Compile Include="Apresentação\TelaChamado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Apresentação\TelaChamado.Designer.cs">
+      <DependentUpon>TelaChamado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modelo\PessoaMODEL.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Apresentação\TelaLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Apresentação\TelaLogin.Designer.cs">
+      <DependentUpon>TelaLogin.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Apresentação\BemVindo.resx">
+      <DependentUpon>BemVindo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Apresentação\Cadastro.resx">
+      <DependentUpon>Cadastro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Apresentação\GerarRelatorio.resx">
+      <DependentUpon>GerarRelatorio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Apresentação\GerenciarChamado.resx">
+      <DependentUpon>GerenciarChamado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Apresentação\ConsultarChamado.resx">
+      <DependentUpon>ConsultarChamado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Apresentação\TelaAdm.resx">
+      <DependentUpon>TelaAdm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Apresentação\TelaChamado.resx">
+      <DependentUpon>TelaChamado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Apresentação\TelaLogin.resx">
+      <DependentUpon>TelaLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

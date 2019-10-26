@@ -1,0 +1,13 @@
+C:\Users\pmgf9\source\repos\Sistema_De_Chamados\Sistema_De_Chamados\bin\Debug\Sistema_De_Chamados.exe.config
+C:\Users\pmgf9\source\repos\Sistema_De_Chamados\Sistema_De_Chamados\bin\Debug\Sistema_De_Chamados.exe
+C:\Users\pmgf9\source\repos\Sistema_De_Chamados\Sistema_De_Chamados\bin\Debug\Sistema_De_Chamados.pdb
+C:\Users\pmgf9\source\repos\Sistema_De_Chamados\Sistema_De_Chamados\obj\Debug\Sistema_De_Chamados.csprojAssemblyReference.cache
+C:\Users\pmgf9\source\repos\Sistema_De_Chamados\Sistema_De_Chamados\obj\Debug\Sistema_De_Chamados.Cadastrar.resources
+C:\Users\pmgf9\source\repos\Sistema_De_Chamados\Sistema_De_Chamados\obj\Debug\Sistema_De_Chamados.Login.resources
+C:\Users\pmgf9\source\repos\Sistema_De_Chamados\Sistema_De_Chamados\obj\Debug\Sistema_De_Chamados.GerarRelatorio.resources
+C:\Users\pmgf9\source\repos\Sistema_De_Chamados\Sistema_De_Chamados\obj\Debug\Sistema_De_Chamados.Properties.Resources.resources
+C:\Users\pmgf9\source\repos\Sistema_De_Chamados\Sistema_De_Chamados\obj\Debug\Sistema_De_Chamados.TelaChamado.resources
+C:\Users\pmgf9\source\repos\Sistema_De_Chamados\Sistema_De_Chamados\obj\Debug\Sistema_De_Chamados.csproj.GenerateResource.cache
+C:\Users\pmgf9\source\repos\Sistema_De_Chamados\Sistema_De_Chamados\obj\Debug\Sistema_De_Chamados.csproj.CoreCompileInputs.cache
+C:\Users\pmgf9\source\repos\Sistema_De_Chamados\Sistema_De_Chamados\obj\Debug\Sistema_De_Chamados.exe
+C:\Users\pmgf9\source\repos\Sistema_De_Chamados\Sistema_De_Chamados\obj\Debug\Sistema_De_Chamados.pdb
